@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/vedio">
+
+    <fragment
+        android:id="@+id/face"
+        android:name="com.example.familyplanning.ui.Face"
+        android:label="fragment_face"
+        tools:layout="@layout/fragment_face" >
+        <action
+            android:id="@+id/action_face_to_questions"
+            app:destination="@id/questions" />
+    </fragment>
+    <fragment
+        android:id="@+id/questions"
+        android:name="com.example.familyplanning.ui.Questions"
+        android:label="Questions" />
+    <fragment
+        android:id="@+id/vedio"
+        android:name="com.example.familyplanning.ui.Vedio"
+        android:label="Vedio" />
+</navigation>
